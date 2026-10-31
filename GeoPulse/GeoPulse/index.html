@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="GeoPulse — مساحة لتعلّم الجيولوجيا البنائية واستكشاف الدرع العربي والوصول إلى الكتب والمقالات من مصادرها الأصلية.">
+  <title>GeoPulse | نبض المعرفة الجيولوجية</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">انتقل إلى المحتوى</a>
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="brand" href="#home" aria-label="GeoPulse — Home" dir="ltr"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M3 26 12 21 19 25 28 16 37 20M3 32 12 27 19 31 28 22 37 26M3 20 12 15 19 19 28 10 37 14"/></svg><span>Geo<span class="brand-light">Pulse</span><small>GEOLOGY, CONNECTED.</small></span></a>
+  <nav id="navigation" aria-label="التنقل الرئيسي" data-label="navLabel">
+   <a href="#structural" data-i18n="navStructural">الجيولوجيا البنائية</a>
+   <a href="#shield" data-i18n="navShield">الدرع العربي</a>
+   <a href="#resources" data-i18n="navResources">الكتب والمقالات</a>
+   <a href="#attribution" data-i18n="navAttribution">بيان المشروع والتواصل</a>
+  </nav>
+  <div class="header-controls">
+    <button id="language" class="language" lang="en" aria-label="Switch to English"><span aria-hidden="true">◎</span> <span id="language-text">English</span></button>
+    <button id="menu" class="menu" aria-expanded="false" aria-controls="navigation" aria-label="فتح القائمة" data-label="menuLabel"><span></span><span></span></button>
+  </div>
+ </div>
+</header>
+<main id="main">
+ <section id="home" class="hero container">
+  <div class="hero-copy">
+   <div class="eyebrow"><span class="small-line"></span><span data-i18n="heroEyebrow">فضولك هو نقطة البداية</span></div>
+   <h1><span data-i18n="heroTitle1">اقرأ الصخور.</span><br><em data-i18n="heroTitle2">افهم القصة.</em></h1>
+   <p class="hero-description" data-i18n="heroDescription">من أول مفهوم في الجيولوجيا البنائية إلى حكاية الدرع العربي. مساحة معرفية للطلاب، تبدأ بالأساسيات وتتّسع مع فضولك.</p>
+   <a class="primary-button" href="#explore"><span data-i18n="exploreButton">استكشف الأقسام</span><span class="direction-arrow" aria-hidden="true">←</span></a>
+   <div class="hero-note"><span class="status-dot"></span><span data-i18n="heroNote">نبني هذه المساحة، موضوعًا بعد موضوع</span></div>
+  </div>
+  <div class="hero-art" role="img" aria-label="رسم فني لطبقات صخرية ملتوية" data-label="artLabel">
+   <div class="art-top"><span>FIELD NOTES / 001</span><span>GEOPULSE</span></div>
+   <svg class="strata-art" viewBox="0 0 580 470" aria-hidden="true">
+    <defs><clipPath id="strata-clip"><path d="M38 91 459 39 550 142 550 341 138 425 38 316Z"/></clipPath><pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".85" fill="#1c4639" opacity=".2"/></pattern></defs>
+    <g fill="none" stroke="#d4d8cc" stroke-width="1"><ellipse cx="302" cy="247" rx="260" ry="196" transform="rotate(-12 302 247)"/><ellipse cx="302" cy="247" rx="237" ry="175" transform="rotate(-12 302 247)"/><path d="M19 389 565 279M89 16 89 442M492 8 492 444" stroke-dasharray="3 7"/></g>
+    <g clip-path="url(#strata-clip)">
+     <path fill="#c4cbb0" d="M0 0H580V470H0Z"/>
+     <path fill="#e6d5b4" d="M-15 86C109 123 125 25 221 73S315 229 428 125 563 93 600 121V480H-15Z"/>
+     <path fill="#bc7958" d="M-15 117C109 154 125 56 221 104S315 260 428 156 563 124 600 152V480H-15Z"/>
+     <path fill="#d1a37d" d="M-15 143C109 180 125 82 221 130S315 286 428 182 563 150 600 178V480H-15Z"/>
+     <path fill="#f0e7d3" d="M-15 176C109 213 125 115 221 163S315 319 428 215 563 183 600 211V480H-15Z"/>
+     <path fill="#8f9c73" d="M-15 212C109 249 125 151 221 199S315 355 428 251 563 219 600 247V480H-15Z"/>
+     <path fill="#476552" d="M-15 249C109 286 125 188 221 236S315 392 428 288 563 256 600 284V480H-15Z"/>
+     <path fill="#264b3e" d="M-15 280C109 317 125 219 221 267S315 423 428 319 563 287 600 315V480H-15Z"/>
+     <path fill="#173c33" d="M-15 317C109 354 125 256 221 304S315 460 428 356 563 324 600 352V480H-15Z"/>
+     <path fill="url(#dots)" d="M0 0H580V470H0Z"/>
+     <path d="M38 91 138 198 138 425 38 316Z" fill="#173c33" opacity=".09"/>
+    </g>
+    <path d="M38 91 459 39 550 142 550 341 138 425 38 316Z" fill="none" stroke="#254d3e" stroke-opacity=".28"/>
+    <g fill="none" stroke="#46634e"><path d="M427 110 487 55H555"/><circle cx="427" cy="110" r="4" fill="#f6f5ee"/><path d="M185 331 127 385H22"/><circle cx="185" cy="331" r="4" fill="#f6f5ee"/></g>
+   </svg>
+   <div class="art-bottom"><span data-i18n="artCaption">لكل طبقة حكاية.</span><span class="art-symbol" aria-hidden="true">↗</span></div>
+  </div>
+ </section>
+ <section id="explore" class="explore-strip">
+  <div class="container explore-inner"><div class="explore-label"><span class="eyebrow" data-i18n="exploreLabel">أبواب المعرفة</span><span data-i18n="exploreHint">اختر أين تبدأ</span></div>
+   <a href="#structural"><span class="index">01</span><span data-i18n="navStructural">الجيولوجيا البنائية</span><span class="direction-arrow" aria-hidden="true">↙</span></a>
+   <a href="#shield"><span class="index">02</span><span data-i18n="navShield">الدرع العربي</span><span class="direction-arrow" aria-hidden="true">↙</span></a>
+   <a href="#resources"><span class="index">03</span><span data-i18n="navResources">الكتب والمقالات</span><span class="direction-arrow" aria-hidden="true">↙</span></a>
+  </div>
+ </section>
+
+ <section id="structural" class="container section structural">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow"><span class="section-number">01</span><span data-i18n="structuralEyebrow">افهم كيف تتشوّه الصخور</span></p>
+      <h2 data-i18n="structuralTitle">الجيولوجيا البنائية</h2>
+    </div>
+    <p class="section-intro" data-i18n="structuralIntro">ثلاثة محاور أساسية مترابطة؛ من المفاهيم الأولى إلى تراكيب تحكي قصة التشوّه وتحليل القوى في باطن الأرض.</p>
+  </div>
+  <div class="topics-grid topics-grid-3">
+   <button class="topic-card" data-topic="intro" aria-label="عرض مدخل إلى الجيولوجيا البنائية">
+     <div class="topic-top"><span class="index">01 / 03</span><span class="card-status active-badge" data-i18n="availableNow">شرح متكامل</span></div>
+     <svg viewBox="0 0 200 95" class="topic-art" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="53" cy="47" r="25"/><ellipse cx="143" cy="47" rx="34" ry="17"/><path d="M89 47h12m-5-4 5 4-5 4M53 7v10m-4-5 4 5 4-5M53 88V78m-4 5 4-5 4 5"/></g></svg>
+     <h3 data-i18n="introTitle">مدخل إلى الجيولوجيا البنائية</h3>
+     <p data-i18n="introDesc">البداية من هنا، مع مفاهيم الإجهاد والانفعال ومناهج التحليل الوصفي والحركي والديناميكي.</p>
+     <div class="card-bottom"><span lang="en">Stress & Strain</span><span class="card-arrow direction-arrow" aria-hidden="true">←</span></div>
+   </button>
+
+   <button class="topic-card" data-topic="ductile" aria-label="عرض التشوّه اللدن">
+     <div class="topic-top"><span class="index">02 / 03</span><span class="card-status active-badge" data-i18n="availableNow">شرح متكامل</span></div>
+     <svg viewBox="0 0 200 95" class="topic-art" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M15 46c35 0 32-33 65-33s28 62 62 62 30-33 43-33M15 56c35 0 32-33 65-33s28 62 62 62 30-33 43-33M15 36C50 36 47 3 80 3s28 62 62 62 30-33 43-33"/></g></svg>
+     <h3 data-i18n="ductileTitle">التشوّه اللدن</h3>
+     <p data-i18n="ductileDesc">فهم الطيات، أجزاء الطية (المحور، المستوى المحوري)، التورّق، والتخطّط في الأعماق.</p>
+     <div class="card-bottom"><span lang="en">Ductile Deformation</span><span class="card-arrow direction-arrow" aria-hidden="true">←</span></div>
+   </button>
+
+   <button class="topic-card" data-topic="brittle" aria-label="عرض التشوّه الهش">
+     <div class="topic-top"><span class="index">03 / 03</span><span class="card-status active-badge" data-i18n="availableNow">شرح متكامل</span></div>
+     <svg viewBox="0 0 200 95" class="topic-art" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M20 20h85M20 36h77M20 52h68M20 68h59M113 37h67M105 53h75M96 69h84M88 85h92M115 6 72 91"/><path d="m123 22-10 19m0-8v8l7-4M83 59l-10 19m0-8v8l7-4"/></g></svg>
+     <h3 data-i18n="brittleTitle">التشوّه الهش</h3>
+     <p data-i18n="brittleDesc">الفواصل، الكسور، وأنواع الفوالق (العادية، المعكوسة، المضربية) مع تحليل حركية التصدع.</p>
+     <div class="card-bottom"><span lang="en">Brittle Deformation</span><span class="card-arrow direction-arrow" aria-hidden="true">←</span></div>
+   </button>
+  </div>
+  <p class="section-note"><span class="status-dot"></span><span data-i18n="structuralNote">اضغط على أي محور لعرض الشرح المفاهيمي المتكامل مع المخطط التوضيحي.</span></p>
+ </section>
+
+ <section id="shield" class="shield-section">
+  <div class="container shield-layout">
+   <div class="shield-copy">
+     <p class="eyebrow"><span class="section-number">02</span><span data-i18n="shieldEyebrow">جيولوجيا من أرضنا</span></p>
+     <h2 data-i18n="shieldTitle">الدرع العربي</h2>
+     <p data-i18n="shieldIntro">رحلة للتعرّف على نشأة الدرع العربي وتكوينه التكتوني عبر التحام الأقواس الجزرية، وتصنيف وحداته الصخرية المعقدة بنظام ASLLC المعتمد.</p>
+     <div class="shield-foot"><span class="status-dot"></span><span data-i18n="shieldNote">شروحات ومصادر علمية موثقة وفق هيئة المساحة الجيولوجية السعودية</span></div>
+   </div>
+   <div class="shield-topics">
+     <button class="shield-topic" data-topic="formation" aria-label="عرض نشأة وتطور الدرع العربي">
+       <span class="shield-topic-number">01</span>
+       <div>
+         <h3 data-i18n="formationTitle">التكوين والنشأة التكتونية</h3>
+         <p lang="en">Formation & Arc Accretion</p>
+       </div>
+       <span class="direction-arrow" aria-hidden="true">←</span>
+     </button>
+     <button class="shield-topic" data-topic="asllc" aria-label="عرض نظام تصنيف الصخور ASLLC">
+       <span class="shield-topic-number">02</span>
+       <div>
+         <h3 data-i18n="asllcTitle">تصنيف الصخور ونظام ASLLC</h3>
+         <p lang="en">Lithodemic Classification</p>
+       </div>
+       <span class="direction-arrow" aria-hidden="true">←</span>
+     </button>
+   </div>
+  </div>
+ </section>
+
+ <section id="resources" class="container section resources-section">
+  <div class="section-heading resources-header-wrap">
+    <div>
+      <p class="eyebrow"><span class="section-number">03</span><span data-i18n="resourcesEyebrow">أكمل رحلة التعلّم</span></p>
+      <h2 data-i18n="resourcesTitle">الكتب والمقالات الموصى بها</h2>
+      <p class="section-intro" data-i18n="resourcesIntro">مكتبة مراجع علمية مختارة بعناية تدعم الطالب والباحث، مع توفير روابط مباشرة للشراء أو القراءة من مواقع النشر الأصلية دون استضافة أي ملفات محليًا.</p>
+    </div>
+    <div class="resources-head-actions">
+      <button id="open-add-resource" class="primary-button add-btn" aria-haspopup="dialog">
+        <span class="btn-plus" aria-hidden="true">＋</span>
+        <span data-i18n="addResourceBtn">إضافة كتاب أو مرجع</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="resources-toolbar">
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+      <input type="search" id="resource-search" class="search-input" placeholder="ابحث بعنوان الكتاب، المؤلف، أو الكلمات المفتاحية..." data-placeholder="searchPlaceholder" aria-label="البحث في الكتب والمراجع">
+    </div>
+    <div class="filter-pills" role="tablist" aria-label="تصفية المراجع حسب التخصص">
+      <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true" data-i18n="filterAll">جميع المراجع</button>
+      <button class="filter-pill" data-filter="structural" role="tab" aria-selected="false" data-i18n="filterStructural">الجيولوجيا البنائية</button>
+      <button class="filter-pill" data-filter="shield" role="tab" aria-selected="false" data-i18n="filterShield">الدرع العربي</button>
+      <button class="filter-pill" data-filter="general" role="tab" aria-selected="false" data-i18n="filterGeneral">مراجع عامة</button>
+    </div>
+  </div>
+
+  <div id="resources-grid" class="resources-grid" aria-live="polite"></div>
+
+  <div id="resources-empty" class="resources-empty" hidden>
+    <div class="empty-icon" aria-hidden="true">🔍</div>
+    <h3 data-i18n="noResultsTitle">لم يتم العثور على مراجع مطابقة</h3>
+    <p data-i18n="noResultsDesc">جرب البحث بكلمات أخرى أو اختر تصفية مختلفة.</p>
+  </div>
+
+  <div class="resources-footer-note">
+    <div class="res-note-text">
+      <span class="status-dot"></span>
+      <span data-i18n="storagePersistenceNote">المراجع المضافة تحفظ محليًا في متصفحك وتبقى عند تحديث الصفحة.</span>
+    </div>
+    <button id="reset-resources-btn" class="text-button" data-i18n="resetResources">استعادة المراجع الافتراضية</button>
+  </div>
+ </section>
+
+ <section id="attribution" class="container attribution-section">
+  <div class="attribution-card">
+    <div class="attribution-top">
+      <div class="badge-group">
+        <span class="badge badge-kau" data-i18n="attrBadgeKau">جامعة الملك عبدالعزيز — كلية علوم الأرض</span>
+        <span class="badge badge-course" data-i18n="attrBadgeCourse">الجيولوجيا البنائية المتقدمة (ESR-312)</span>
+      </div>
+      <h2 data-i18n="attributionHeading">بيان المشروع الأكاديمي وحقوق النشر</h2>
+    </div>
+
+    <div class="attribution-grid">
+      <div class="attr-column student-column">
+        <div class="column-icon-header">
+          <span class="column-icon" aria-hidden="true">🎓</span>
+          <div>
+            <h3 data-i18n="studentCardTitle">عمل طلابي مستمر</h3>
+            <span class="sub-label" data-i18n="studentCardSubtitle">بإشراف قسم الجيولوجيا البنائية وعلم الطبقات</span>
+          </div>
+        </div>
+        <p class="attr-body-text" data-i18n="studentCardText">
+          هذا الموقع مشروع تعليمي شخصي من إعداد الطالب <strong>منذر السلمي</strong> (الرقم الجامعي: <strong>2541706</strong>)، يهدف لتبسيط مفاهيم الجيولوجيا البنائية وتوثيق جيولوجيا المملكة والدرع العربي كمرجع للطلاب.
+        </p>
+        <div class="contact-box">
+          <div class="contact-title" data-i18n="contactTitle">لأي استفسار، ملاحظة علمية، أو اقتراح تعديل:</div>
+          <div class="contact-action-row">
+            <a href="mailto:malsulami0868@stu.kau.edu.sa" class="email-link" title="إرسال بريد إلكتروني">
+              <span class="email-icon" aria-hidden="true">✉</span>
+              <span class="email-address">malsulami0868@stu.kau.edu.sa</span>
+            </a>
+            <button id="copy-email-btn" class="copy-email-button" type="button" aria-label="نسخ الإيميل الجامعي">
+              <span id="copy-btn-icon" aria-hidden="true">📋</span>
+              <span id="copy-btn-text" data-i18n="copyEmailBtn">نسخ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="attr-column policy-column">
+        <div class="column-icon-header">
+          <span class="column-icon" aria-hidden="true">⚖️</span>
+          <div>
+            <h3 data-i18n="policyCardTitle">سياسة عدم استضافة ملفات PDF</h3>
+            <span class="sub-label" data-i18n="policyCardSubtitle">احترام حقوق الملكية الفكرية والنشر العلمي</span>
+          </div>
+        </div>
+        <p class="attr-body-text" data-i18n="policyCardText">
+          التزامًا بالأمانة العلمية وقوانين حماية حقوق المؤلف العالمية والوطنية: <strong>لن يتم رفع أو توفير أي ملف PDF لأي كتاب أو مقال أو ورقة علمية على خوادم هذا الموقع إطلاقًا</strong>.
+        </p>
+        <div class="policy-highlight">
+          <span class="check-icon" aria-hidden="true">✓</span>
+          <p data-i18n="policyHighlightText">
+            تقتصر منصة GeoPulse على تقديم ملخصات علمية موجزة وتوجيه الزائر عبر روابط مباشرة للمواقع الرسمية للناشرين الأصليين (مثل Cambridge, Wiley, SGS, Springer) للشراء أو الاطلاع النظامي.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section class="about-strip container">
+   <div class="about-mark" aria-hidden="true">G<span>p</span>.</div>
+   <p data-i18n="about">GeoPulse مشروع تعليمي طلابي لمادة الجيولوجيا البنائية المتقدمة ESR-312، يجمع المعرفة الجيولوجية في مساحة واضحة ومنظّمة ومتاحة للجميع عبر GitHub.</p>
+   <a href="#home" class="back-top"><span data-i18n="backTop">للأعلى</span> ↑</a>
+ </section>
+</main>
+
+<footer class="container">
+ <span dir="ltr">© <span id="year">2026</span> GeoPulse • KAU Student Project</span>
+ <span data-i18n="footer">معرفة تبدأ بالفضول.</span>
+ <span dir="ltr">AR / EN</span>
+</footer>
+
+<!-- Educational Topic Dialog -->
+<dialog id="topic-dialog" aria-labelledby="dialog-title">
+ <div class="dialog-top">
+   <div>
+     <span class="eyebrow" data-i18n="dialogEyebrow">شرح تفصيلي ومخطط علمي</span>
+     <h2 id="dialog-title"></h2>
+   </div>
+   <button id="close-dialog" class="close-dialog" aria-label="إغلاق" data-label="closeLabel">×</button>
+ </div>
+ <div class="topic-dialog-body">
+   <div id="dialog-diagram" class="dialog-diagram-container" role="img" aria-label="مخطط جيولوجي توضيحي"></div>
+   <p id="dialog-description" class="dialog-desc"></p>
+   <div class="dialog-details-card">
+     <h4 class="details-heading" data-i18n="keyConceptsTitle">المفاهيم والعناصر الأساسية:</h4>
+     <ul id="dialog-list" class="dialog-list"></ul>
+   </div>
+   <div id="dialog-extra" class="dialog-extra"></div>
+ </div>
+ <div class="dialog-footer">
+   <p class="dialog-note"><span class="status-dot"></span><span data-i18n="dialogNote">محتوى علمي مراجع من مراجع الجيولوجيا البنائية والدرع العربي المعتمدة.</span></p>
+   <button id="dialog-done" class="primary-button" data-i18n="dialogDone">إغلاق والمتابعة</button>
+ </div>
+</dialog>
+
+<!-- Add Resource Dialog -->
+<dialog id="add-resource-dialog" aria-labelledby="add-resource-title">
+ <div class="dialog-top">
+   <div>
+     <span class="eyebrow" data-i18n="addResourceEyebrow">إثراء المكتبة</span>
+     <h2 id="add-resource-title" data-i18n="addResourceTitle">إضافة كتاب أو مقال للمكتبة</h2>
+   </div>
+   <button id="close-add-resource" class="close-dialog" aria-label="إغلاق" data-label="closeLabel">×</button>
+ </div>
+ <form id="add-resource-form" class="resource-form" novalidate>
+   <div class="form-group">
+     <label for="resource-image-input" class="form-label required" data-i18n="labelCover">صورة الغلاف (مطلوبة)</label>
+     <div class="upload-dropzone" id="upload-dropzone">
+       <input type="file" id="resource-image-input" accept="image/*" class="sr-only-input" required>
+       <div id="dropzone-empty" class="dropzone-empty">
+         <div class="upload-icon-graphic" aria-hidden="true">📖</div>
+         <span class="upload-prompt" data-i18n="uploadPrompt">اضغط هنا لرفع صورة الغلاف</span>
+         <span class="upload-types" data-i18n="uploadTypes">PNG, JPG, WebP أو GIF</span>
+       </div>
+       <div id="dropzone-preview" class="dropzone-preview" hidden>
+         <img id="cover-preview-img" src="" alt="معاينة الغلاف">
+         <button type="button" id="remove-cover-btn" class="remove-cover-btn" aria-label="إزالة الصورة">✕ <span data-i18n="removeImage">تغيير الصورة</span></button>
+       </div>
+     </div>
+     <div id="image-error-msg" class="form-error-msg" data-i18n="imageRequiredError" hidden>يرجى اختيار صورة الغلاف أولاً للمتابعة.</div>
+   </div>
+
+   <div class="form-row">
+     <div class="form-group flex-1">
+       <label for="resource-title-input" class="form-label required" data-i18n="labelTitle">عنوان الكتاب أو المقال</label>
+       <input type="text" id="resource-title-input" class="form-input" required placeholder="مثال: Structural Geology" data-placeholder="titlePlaceholder">
+     </div>
+     <div class="form-group flex-1">
+       <label for="resource-author-input" class="form-label required" data-i18n="labelAuthor">المؤلف / الجهة الناشرة</label>
+       <input type="text" id="resource-author-input" class="form-input" required placeholder="مثال: Haakon Fossen" data-placeholder="authorPlaceholder">
+     </div>
+   </div>
+
+   <div class="form-row">
+     <div class="form-group flex-1">
+       <label for="resource-category-select" class="form-label required" data-i18n="labelCategory">التصنيف الموضوعي</label>
+       <select id="resource-category-select" class="form-input">
+         <option value="structural" data-i18n="catStructural">الجيولوجيا البنائية (Structural Geology)</option>
+         <option value="shield" data-i18n="catShield">الدرع العربي (Arabian Shield)</option>
+         <option value="general" data-i18n="catGeneral">مرجع عام (General Reference)</option>
+       </select>
+     </div>
+     <div class="form-group flex-1">
+       <label for="resource-year-input" class="form-label" data-i18n="labelYear">سنة النشر (اختياري)</label>
+       <input type="text" id="resource-year-input" class="form-input" placeholder="مثال: 2020" data-placeholder="yearPlaceholder">
+     </div>
+   </div>
+
+   <div class="form-group">
+     <label for="resource-url-input" class="form-label required" data-i18n="labelUrl">رابط الشراء أو القراءة من الناشر الأصلي (Official Link)</label>
+     <input type="url" id="resource-url-input" class="form-input" required placeholder="https://www.cambridge.org/..." data-placeholder="urlPlaceholder">
+     <span class="form-helper-text" data-i18n="urlHelper">ضع الرابط المباشر للموقع الرسمي للناشر أو صفحة DOI الرسمية. لا تضع روابط ملفات PDF مقرصنة.</span>
+   </div>
+
+   <div class="form-group">
+     <label for="resource-desc-input" class="form-label required" data-i18n="labelDesc">وصف موجز للمرجع</label>
+     <textarea id="resource-desc-input" class="form-input" rows="3" required placeholder="ما الذي يغطيه هذا المرجع وما مدى فائدته للطلاب..." data-placeholder="descPlaceholder"></textarea>
+   </div>
+
+   <div class="form-actions-row">
+     <button type="submit" class="primary-button" id="save-resource-btn">
+       <span data-i18n="submitResourceBtn">حفظ وإضافة للمكتبة</span>
+       <span class="direction-arrow" aria-hidden="true">←</span>
+     </button>
+     <button type="button" id="cancel-add-resource" class="secondary-button" data-i18n="cancelBtn">إلغاء</button>
+   </div>
+ </form>
+</dialog>
+</body>
+</html>
